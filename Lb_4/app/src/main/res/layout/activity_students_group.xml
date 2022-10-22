@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentsGroupActivity">
+
+  <CheckBox
+      android:id="@+id/privilege_flg"
+      android:layout_width="209dp"
+      android:layout_height="49dp"
+      android:layout_marginStart="43dp"
+      android:layout_marginEnd="6dp"
+      android:text="@string/privilege_flg_txt"
+      app:layout_constraintBottom_toTopOf="@+id/button5"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/edu_level_master"
+      app:layout_constraintTop_toBottomOf="@+id/contract_flg" />
+
+  <CheckBox
+      android:id="@+id/contract_flg"
+      android:layout_width="209dp"
+      android:layout_height="49dp"
+      android:layout_marginStart="43dp"
+      android:layout_marginEnd="6dp"
+      android:text="@string/contract_flg_txt"
+      app:layout_constraintBottom_toTopOf="@+id/privilege_flg"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/edu_level_bachelor"
+      app:layout_constraintTop_toBottomOf="@+id/additional_flg_txt" />
+
+  <EditText
+      android:id="@+id/grpNumberEdit"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="20dp"
+      android:layout_weight="3"
+      android:ems="10"
+      android:gravity="center"
+      android:inputType="textPersonName"
+      app:layout_constraintBottom_toTopOf="@+id/facultyEdit"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/textView3"
+      app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+      tools:ignore="MissingConstraints" />
+
+  <Button
+      android:id="@+id/button5"
+      android:layout_width="261dp"
+      android:layout_height="49dp"
+      android:layout_marginStart="75dp"
+      android:layout_marginTop="13dp"
+      android:layout_marginEnd="75dp"
+      android:layout_marginBottom="320dp"
+      android:text="@string/btn_ok_text"
+      android:textSize="20dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/privilege_flg"
+      tools:ignore="MissingConstraints"
+      android:onClick="onOkBtnClick"/>
+
+  <EditText
+      android:id="@+id/facultyEdit"
+      android:layout_width="379dp"
+      android:layout_height="44dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="2dp"
+      android:layout_marginEnd="18dp"
+      android:layout_marginBottom="12dp"
+      android:layout_weight="3"
+      android:ems="10"
+      android:gravity="center"
+      android:inputType="textPersonName"
+      app:layout_constraintBottom_toTopOf="@+id/edu_level_txt"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView4"
+      tools:ignore="MissingConstraints" />
+
+  <TextView
+      android:id="@+id/textView4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="282dp"
+      android:text="@string/faculty_txt"
+      android:textSize="@dimen/default_text_size"
+      app:layout_constraintBottom_toTopOf="@+id/facultyEdit"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView3"
+      tools:ignore="MissingConstraints" />
+
+  <TextView
+      android:id="@+id/textView3"
+      android:layout_width="138dp"
+      android:layout_height="29dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="270dp"
+      android:layout_marginEnd="8dp"
+      android:text="@string/grp_number_txt"
+      android:textSize="@dimen/default_text_size"
+      app:layout_constraintBottom_toTopOf="@+id/textView4"
+      app:layout_constraintEnd_toStartOf="@+id/grpNumberEdit"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="MissingConstraints" />
+
+  <TextView
+      android:id="@+id/edu_level_txt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="15dp"
+      android:layout_marginEnd="264dp"
+      android:text="@string/edu_level_txt"
+      android:textSize="@dimen/default_text_size"
+      app:layout_constraintBottom_toTopOf="@+id/edu_level_bachelor"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/facultyEdit" />
+
+  <TextView
+      android:id="@+id/additional_flg_txt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="48dp"
+      android:layout_marginTop="12dp"
+      android:layout_marginEnd="17dp"
+      android:layout_marginBottom="4dp"
+      android:text="@string/additional_flg_txt"
+      android:textSize="@dimen/default_text_size"
+      app:layout_constraintBottom_toTopOf="@+id/contract_flg"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toEndOf="@+id/edu_level_txt"
+      app:layout_constraintTop_toBottomOf="@+id/facultyEdit" />
+
+  <CheckBox
+      android:id="@+id/edu_level_bachelor"
+      android:layout_width="137dp"
+      android:layout_height="49dp"
+      android:layout_marginStart="15dp"
+      android:layout_marginEnd="259dp"
+      android:layout_marginBottom="1dp"
+      android:text="@string/edu_level_bachelor_txt"
+      app:layout_constraintBottom_toTopOf="@+id/edu_level_master"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/edu_level_txt" />
+
+  <CheckBox
+      android:id="@+id/edu_level_master"
+      android:layout_width="137dp"
+      android:layout_height="49dp"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="2dp"
+      android:layout_marginEnd="259dp"
+      android:layout_marginBottom="28dp"
+      android:text="@string/edu_level_master_txt"
+      app:layout_constraintBottom_toTopOf="@+id/button5"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/edu_level_bachelor" />
+
+  <FrameLayout
+      android:id="@+id/frameLayout"
+      android:layout_width="410dp"
+      android:layout_height="249dp"
+      android:layout_marginTop="-5dp"
+      app:layout_constraintBottom_toTopOf="@+id/grpNumberEdit"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="MissingConstraints">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="410dp"
+        android:layout_height="271dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/rick_and_morty"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/grpNumberImageTxt"
+        android:layout_width="81dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="10dp"
+        android:text="Група"
+        android:textColor="#1B4A13"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/facultyNameImageTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="220dp"
+        android:text="Факультет"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+  </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
