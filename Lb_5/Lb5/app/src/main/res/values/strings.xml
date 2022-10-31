@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Довідник студентів!</string>
+    <string name="deafault_text">Список студентів</string>
+    <string name="btn_text">Показати список</string>
+    <string name="textview">Виберіть групу</string>
+    <string-array name="students_groups">
+        <item>ІПЗ19-1</item>
+        <item>ІПЗ19-2</item>
+        <item>К19</item>
+    </string-array>
+
+</resources>
